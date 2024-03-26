@@ -26,6 +26,4 @@ jobs:
       
       - name: Run Unit Tests
         run: |
-          # Run your unit tests here
-          # For example, if you're using pytest:
           pytest
