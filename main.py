@@ -7,7 +7,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import make_pipeline
 
 
 iris_df_original = pd.read_csv("iris.csv")
@@ -26,6 +25,7 @@ classifiers = {
     'Logistic Regression': LogisticRegression(),
     'Decision Tree': DecisionTreeClassifier()
 }
+
 
 # Function to train and evaluate classifiers
 def train_and_evaluate(classifiers, X_train, X_test, y_train, y_test):
