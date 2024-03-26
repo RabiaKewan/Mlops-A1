@@ -43,6 +43,7 @@ print("Results on original dataset:")
 original_results = train_and_evaluate(classifiers, X_train_original, X_test_original, y_train_original, y_test_original)
 
 
+
 scaler = StandardScaler()
 X_preprocessed = scaler.fit_transform(X_original)
 
